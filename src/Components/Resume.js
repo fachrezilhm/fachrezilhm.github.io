@@ -56,11 +56,11 @@ class Resume extends Component {
 
     return (
       <section id="resume">
-        <Slide left duration={1300}>
+        <Slide bottom duration={100}>
           <div className="row education">
             <div className="three columns header-col">
               <h1>
-                <span>Education</span>
+                <span>Pendidikan</span>
               </h1>
             </div>
 
@@ -72,35 +72,57 @@ class Resume extends Component {
           </div>
         </Slide>
 
-        <Slide left duration={1300}>
+        <Slide bottom duration={100}>
           <div className="row work">
             <div className="three columns header-col">
               <h1>
-                <span>Work</span>
+                <span>Pengalaman Kerja</span>
               </h1>
             </div>
 
             <div className="nine columns main-col">{work}</div>
           </div>
         </Slide>
-
-        <Slide left duration={1300}>
-          <div className="row skill">
+        <Slide bottom duration={100}>
+          <div className="row skills">
             <div className="three columns header-col">
               <h1>
-                <span>Skills</span>
+                <span>Skill</span>
               </h1>
             </div>
-
-            <div className="nine columns main-col">
-              <p>{skillmessage}</p>
-
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
-              </div>
-            </div>
+              <table>
+                <tr>
+                <td>
+                  <ul>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>ReactJs</li>
+                    <li>CSS</li>
+                    <li>WordPress.org</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Oracle Database</li>
+                    <li>Star UML</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Adobe Illustration</li>
+                  </ul>
+                </td>
+                <td>
+                <ul>
+                    <li>Adobe XD</li>
+                    <li>Microsoft Office</li>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft Power Point</li>
+                    <li>Microsoft Visio</li>
+                    </ul>
+                </td>
+                </tr>
+              </table>
           </div>
-        </Slide>
+          </Slide>
       </section>
     );
   }
